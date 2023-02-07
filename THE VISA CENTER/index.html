@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>The Visa Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+</head>
+
+<body>
+  <section class="head">
+    <div class="container flex1">
+      <div class="scoial">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      
+      <div class="logo">
+        <img src="image/logo1.png" alt="">
+      </div>
+      
+      <div class="address">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>152 Av.Maniema,Lubumbashi, RD Congo</span>
+      </div>
+          <div class="select">
+          <select name="" id="">
+      <option value="Anglais"><a href="anglais">Anglais</a></option>
+      <option value="Francais"><a href="index.html">Francais</a></option>
+      <option value="Portiguais"><a href="portiguais">Portiguais</a></option>
+    </select>
+    </div>
+    </div>
+  </section>
+
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar flex1">
+        <div class="sticky_logo logo">
+          <img src="image/logo1.png" alt="">
+        </div>
+
+        <ul class="nav-menu">
+          <li> <a href="#home">Acceuil</a> </li>
+          <li> <a href="#about">About</a> </li>
+          <li> <a href="#services">Nos Formations</a> </li>
+          <li> <a href="#testimonials">Testimonials</a> </li>
+          <li> <a href="#gallary">Gallary</a> </li>
+          <li> <a href="#contact">Contact</a> </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="head_contact">
+          <i class="fas fa-phone-volume"></i>
+          <span>+243 99 36 77 456</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobliemmenu);
+
+    function mobliemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+
+
+  <section class="home" id="home">
+    <div class="container">
+      <h1>The Visa Center</h1>
+      <p>Nous sommes là pour tranformer votre rêve en realité</p>
+
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="heading">
+        <h5>Parcourir</h5>
+        <h2>Vive la dependance</h2>
+      </div>
+
+      <div class="content flex  top">
+        <div class="left">
+          <h3>le meilleur cadre pour faire un reve une realité</h3>
+          
+          <p>Accorder à chaque consommateur une attention particulière est notre domaine d'expertise. 
+            Soyez là pour eux à chaque étape du processus alors qu'ils créent leur avenir avec nous. 
+            Nous connaissons une variété de sujets, tels que les services mutuels et la formation.</p>
+          <p>Chers parents veuillez assurer un bon avenir à vos enfants en les permettants d'aller 
+            etudier en chypre du Nord en securité</p>
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="right">
+          <img src="image/8.jpg" alt="" width="100%" height="60%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="wrapper2">
+    <div class="container">
+      <div class="heading mtop">
+        <h5>FACILITATION</h5>
+        <h2>Nous vous facilitons:</h2>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          <h3>Master, Licence...</h3>
+          <p>Etudiez en chypre du Nord</p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+        <div class="box">
+          <i class="fas fa-mug-hot"></i>
+          <h3>Obtention Visa d'etude</h3>
+          <p>Vous facilitons l'obtention de votre visa</p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+        <div class="box">
+          <i class="fa fa-home" aria-hidden="true"></i>
+          <h3>Logement</h3>
+          <p>logement assurer de vos enfants et un suivi rassurer</p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+        <div class="box">
+          <i class="fa fa-home" aria-hidden="true"></i>
+          <h3>Bon d'acceuil</h3>
+          <p>nous acceuillons vos enfants et les orienter.</p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="offer mtop" id="services">
+    <div class="container">
+      <div class="heading">
+        <h5>Formation </h5>
+        <h3>Formation Accellerée en</h3>
+      </div>
+
+      <div class="content grid2 mtop">
+        <div class="box flex">
+          <div class="left">
+            <img src="image/france.png" alt="" >
+          </div>
+          <div class="right">
+            <h4>Francais</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>La Formation en Francais parler-ecrit</p>
+            <h5>Durée de 2 mois</h5>
+            <button class="flex1">
+              <span>lire Plus</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="image/usa.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Anglais</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>La Formation en anglais parler-ecrit</p>
+            <h5>Durée de 2 mois</h5>
+            <button class="flex1">
+              <span>Lire plus</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="image/porti.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Portigais</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>La Formation en Portigais parler-ecrit</p>
+            <h5>Durée de 2 mois</h5>
+            <button class="flex1">
+              <span>lire plus</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="image/info.webp" alt="">
+          </div>
+          <div class="right">
+            <h4>Informatique</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>Apprennez l'Informatique </p>
+            <h5>Durée de 2 mois</h5>
+            <button class="flex1">
+              <span>Lire plus</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--============================
+    <section class="area top">
+    <div class="container">
+      <div class="heading">
+        <h5>RESTAURANT</h5>
+        <h3>The area we cover under ecorik</h3>
+      </div>
+
+      <div class="content flex mtop">
+        <div class="left">
+          <img src="image/aera.jpg" alt="">
+        </div>
+        <div class="right">
+          <ul>
+            <li>Restaurant </li>
+            <li>Swimming pool </li>
+            <li>Conference room</li>
+          </ul>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section> 
+==========================================-->
+
+  <section class="offer2 about wrapper timer top" id="shop">
+    <div class="container">
+      <div class="heading">
+        <h5>EXPERT TRADUCTEUR  </h5>
+        <h3>TRADUCTION DES DOCUMENTS</h3>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <h3>Francais-Anglais</h3>
+          <p>la traduction des vos documents de Francais à l'anglais</p>
+          <div class="flex">
+            <i class="fal fa-alarm-clock"> Duration: 2 mois</i>
+            <i class="far fa-dot-circle"> Certifié</i>
+          </div>
+          <button class="flex1">
+            <span>Plus d'info</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="box">
+          <h3>Anglais-Francais</h3>
+          <p>la traduction des vos documents de l'anglais au Francais</p>
+          <div class="flex">
+            <i class="fal fa-alarm-clock"> Duration: 2 mois</i>
+            <i class="far fa-dot-circle"> Certifié</i>
+          </div>
+          <button class="flex1">
+            <span>Plus d'info</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="box">
+          <h3>Portigais-Francais</h3>
+          <p>Sla traduction des vos documents Portiguais-Francais</p>
+          <div class="flex">
+            <i class="fal fa-alarm-clock"> Duration: 2 mois</i>
+            <i class="far fa-dot-circle"> Certifié</i>
+          </div>
+          <button class="flex1">
+            <span>Plus d'info</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="customer top" id="testimonials">
+    <div class="container">
+      <div class="heading">
+        <h5>TESTIMONIALS </h5>
+        <h3>What customers say </h3>
+      </div>
+
+      <div class="owl-carousel owl-theme mtop">
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Excellente Formation</h3>
+          <p>The Visa Center reste Un meilleur Centre de formation, qui m'a permit à developper mes capacités</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="image/c1.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Jean-Paul</h3>
+              <span>Manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Etudiant en Informatique</h3>
+          <p>J'ai acquis une bonne connaissance qui m'ont permit à être dependant dans ma profession</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="image/c2.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Ayman Jensi</h3>
+              <span>Informaticien</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Excellent Swimming</h3>
+          <p>idatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="image/c3.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Ayman Jensi</h3>
+              <span>Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="gallary top" id="gallary">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="image/1.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/2.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/4.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/3.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/etudier.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/centre1.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/centre02.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/centre3.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      slideTransition: 'linear',
+      autoplayTimeout: 4000,
+      autoplaySpeed: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+  <section class="map top">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.400494934709!2d27.48291516405485!3d-11.666003341721641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19723f104a650dd1%3A0x6a01e4f7ec8c1d4f!2sTHE%20VISA%20English%20Training%20Center!5e0!3m2!1sfr!2scd!4v1669977199850!5m2!1sfr!2scd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+
+  <footer>
+    <div class="container top">
+      <div class="subscribe" id="contact">
+        <h2>Subscribe newsletter</h2>
+        <p>Envoyez nous votre message pour n'est rien manquer</p>
+        <div class="input flex">
+          <input type="email" placeholder="Your Email address">
+          <button class="flex1">
+            <span>Subscribe</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <div class="logo">
+            <img src="image/logo1.png" alt="">
+          </div>
+          <p>The Visa Center c'est meilleur endroit pour construire votre carriere professionnelle avec des cours Accellerés, vous etes le bienvenu chez nous</p>
+          <div class="social flex">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+
+        
+
+        <div class="box">
+          <h2>Services</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i>Formation en Informatique</li>
+            <li><i class="fas fa-angle-double-right"></i>Cabinet Expert Traducteur</li>
+            <li><i class="fas fa-angle-double-right"></i>Formation Fracais, Anglais, Portigais</li>
+            <li><i class="fas fa-angle-double-right"></i>Etudiez en Chypre du Nord,</li>
+            <li><i class="fas fa-angle-double-right"></i>Facilitation : Visa, Passport</li>
+            <li><i class="fas fa-angle-double-right"></i>Assistance, Logement, Suivi...</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i>Big Data</li>
+            <li><i class="fas fa-angle-double-right"></i>Nos cours</li>
+            <li><i class="fas fa-angle-double-right"></i>Qui sommes-nous?</li>
+            <li><i class="fas fa-angle-double-right"></i>Privacy</li>
+            <li><i class="fas fa-angle-double-right"></i>FAQ</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Plus d'Information</h2>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>152 Av.Maniema,Lubumbashi, RD Congo</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+243 85 25 66 107/99 36 77 456</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>Peaknkulutvshow@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+
+</html>
